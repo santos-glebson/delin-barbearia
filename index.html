@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delin Barbearia</title>
+  <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500;700&family=Mukta&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!-- Header -->
+
+  <header>
+    <a href="index.html" class="logo"><img src="./assets/logo.png" alt=""></a>
+    <img src="./assets//menu.svg" alt="Menu" onclick="openNav()" class="btn-menu">
+    <nav id="header-nav">
+      <img src="./assets/close.svg" alt="Fechar" onclick="closeNav()" class="btn-close-menu">
+      <ul id="menu-ul">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#depo">Depoimentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home -->
+
+  <section id="home">
+    <div class="home-box-image">
+      <div class="image-shadow"></div>
+      <img src="./assets/barber-shop-1-web.jpg" alt="Barbearia">
+    </div>
+    <div class="home-info ">
+      <h1>Saúde para os seus cabelos e barba</h1>
+      <p>Uma barbearia exclusiva em Maringá e com profissionais de ponta.</p>
+      <a href="https://api.whatsapp.com/send?phone=5544999999999&text=Ol%C3%A1%20Glebson%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." class="btn" _blank><i class="fab fa-whatsapp"></i>Agendar um horário</a>
+    </div>
+  </section>
+
+  <div class="hr"></div>
+
+  <!-- Sobre -->
+
+  <section id="sobre">
+    <div class="sobre-box-image">
+      <div class="image-shadow"></div>
+      <img src="./assets/barber-shop-2-web.jpg" alt="Barbearia">
+    </div>
+    <div class="sobre-info ">
+      <h1>Sobre nós</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis arcu quis nisi luctus, id accumsan felis tristique. Proin quis bibendum diam. Sed consequat nisl laoreet eros ultricies pellentesque. Nullam in est porta, pellentesque massa vitae, vehicula risus.
+
+        In placerat, felis vitae sodales dictum, lacus quam pretium mi, ut pretium urna turpis eu dui. Vestibulum id ullamcorper nibh. Donec luctus, nunc finibus elementum suscipit, tortor augue vulputate sapien, vitae feugiat enim augue sed. </p>
+    </div>
+  </section>
+
+  <div class="hr"></div>
+
+  <!-- Serviços -->
+
+  <section id="servicos">
+    <div class="servicos-info ">
+      <h1>Serviços</h1>
+      <p>Com mais de 10 anos no mercado, o Beautysalon já conquistou clientes de inúmeros países com seus tratamentos exclusivos e totalmente naturais.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <img src="./assets/hair.svg" alt="Cortes">
+        <h2>Cortes</h2>
+        <p>A nossa equipe é repleta de profissionais renomados, famosos por lançarem tendências com cortes diferenciados e clássicos.</p>
+      </div>
+      <div class="card">
+        <img src="./assets/beard.svg" alt="Cortes">
+        <h2>Barba</h2>
+        <p>A nossa equipe é repleta de profissionais renomados, famosos por lançarem tendências de barbas diferenciadas e estilosas.</p>
+      </div>
+      <div class="card">
+        <img src="./assets/eyebrow.svg" alt="Cortes">
+        <h2>Sobrancelha</h2>
+        <p>A nossa equipe é repleta de profissionais renomados, famosos por lançarem tendências de sobrancelhas</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="hr"></div>
+
+  <!-- Depoimentos -->
+
+  <section id="depo">
+    <h1>Depoimentos de
+      quem já passou
+      por aqui
+    </h1>
+    <div class="slider" onscroll="scrollSlide()">
+      <div class="slides" onmousewheel="scrollSlides(event)">
+        <div class="slide">
+          <blockquote>
+            <img src="./assets/aspas.svg" alt="Aspas" class="aspas">
+            Eu sou cliente da Delin Barbearia há 5 anos e não troco por nada! Certamente meu estilo mudou muito depois que comecei a frequentar o local. São profissionais incríveis e qualificados!
+          </blockquote>
+          <cite><img src="https://randomuser.me/api/portraits/men/70.jpg" alt="Cliente" class="depo-foto">User 1</cite>
+        </div>
+        <div class="slide">
+          <blockquote>
+            <img src="./assets/aspas.svg" alt="Aspas" class="aspas">
+            Eu sou cliente da Delin Barbearia há 5 anos e não troco por nada! Certamente meu estilo mudou muito depois que comecei a frequentar o local. São profissionais incríveis e qualificados!
+          </blockquote>
+          <cite><img src="https://randomuser.me/api/portraits/men/70.jpg" alt="Cliente" class="depo-foto">User 2</cite>
+        </div>
+        <div class="slide">
+          <blockquote>
+            <img src="./assets/aspas.svg" alt="Aspas" class="aspas">
+            Eu sou cliente da Delin Barbearia há 5 anos e não troco por nada! Certamente meu estilo mudou muito depois que comecei a frequentar o local. São profissionais incríveis e qualificados!
+          </blockquote>
+          <cite><img src="https://randomuser.me/api/portraits/men/70.jpg" alt="Cliente" class="depo-foto">User 3</cite>
+        </div>
+        <div class="slide">
+          <blockquote>
+            <img src="./assets/aspas.svg" alt="Aspas" class="aspas">
+            Eu sou cliente da Delin Barbearia há 5 anos e não troco por nada! Certamente meu estilo mudou muito depois que comecei a frequentar o local. São profissionais incríveis e qualificados!
+          </blockquote>
+          <cite><img src="https://randomuser.me/api/portraits/men/70.jpg" alt="Cliente" class="depo-foto">User 4</cite>
+        </div>
+        <div class="slide">
+          <blockquote>
+            <img src="./assets/aspas.svg" alt="Aspas" class="aspas">
+            Eu sou cliente da Delin Barbearia há 5 anos e não troco por nada! Certamente meu estilo mudou muito depois que comecei a frequentar o local. São profissionais incríveis e qualificados!
+          </blockquote>
+          <cite><img src="https://randomuser.me/api/portraits/men/70.jpg" alt="Cliente" class="depo-foto">User 5</cite>
+        </div>
+        <div class="slide">
+          <blockquote>
+            <img src="./assets/aspas.svg" alt="Aspas" class="aspas">
+            Eu sou cliente da Delin Barbearia há 5 anos e não troco por nada! Certamente meu estilo mudou muito depois que comecei a frequentar o local. São profissionais incríveis e qualificados!
+          </blockquote>
+          <cite><img src="https://randomuser.me/api/portraits/men/70.jpg" alt="Cliente" class="depo-foto">User 6</cite>
+        </div>
+      </div>
+    </div>
+    <div class="box-controlers">
+      <div class="radio-slide radio-checked" id="r1" onclick="clickRadio(this)"></div>
+      <div class="radio-slide" id="r2" onclick="clickRadio(this)"></div>
+      <div class="radio-slide" id="r3" onclick="clickRadio(this)"></div>
+    </div>
+  </section>
+
+  <div class="hr"></div>
+
+  <!-- Contato -->
+
+  <section id="contato">
+    <div class="contato-info ">
+      <h1>Entre em contato com a gente!</h1>
+      <p>Entre em contato com a Delin Barbearia, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.</p>
+      <a href="https://api.whatsapp.com/send?phone=5544999999999&text=Ol%C3%A1%20Glebson%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." class="btn" _blank><i class="fab fa-whatsapp"></i>Entrar em contato</a>
+    </div>
+    <div class="contato-date">
+      <a href="#"><i class="fas fa-phone"></i>44 9 9999-9999</a>
+      <a href="#"><i class="fas fa-map-marker-alt"></i>R. Escondida, 00</a>
+      <a href="#"><i class="fas fa-envelope"></i>delinbarber@contato.com</a>
+    </div>
+  </section>
+
+  <div class="hr"></div>
+
+  <!-- Footer -->
+
+  <footer>
+    <div class="rights">
+      <a href="index.html" class="logo"><img src="./assets/logo-branca.png" alt=""></a>
+      <p>@2021 Delin Barbearia</p>
+      <p>Todos os direitos reservados.</p>
+    </div>
+    <div class="social">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+
+  </footer>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
